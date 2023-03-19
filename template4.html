@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .head1{
+            background-color: black;
+            color:white;
+            padding:20px;
+        }
+        .head2{
+            background-color: white; 
+            color:black;
+            
+        }
+        .inside{
+            margin: auto; 
+            width:80%;
+            
+            
+        }
+        .content-left{
+            display: inline-block; 
+            width:48%;
+            
+        }
+        .content-right{
+            display: inline-block; 
+            text-align: right; 
+            width:48%;
+
+        }
+        .navbar{
+             
+            width:80%;
+            display:inline-block;
+            
+        
+        }
+        .nav{
+            display: inline-block;
+            padding-right:15px;
+            padding-left:15px;
+                    
+        }
+        .nav:hover
+            {
+                background-color:#8aba56;
+                opacity:0.8;
+            }
+        
+        /* head3 */
+
+        .contain{
+            width:33%;
+            padding:50px;
+            display: inline-block;
+            margin: auto;
+            
+
+            }
+        .head3{
+            padding-top:40px;
+            padding-bottom: 40px;
+        }
+        .cards{
+           
+
+            background-color: white;
+            color:rgb(75, 74, 74);
+            text-align: center;
+            line-height: 2;  
+        }
+        .header h4{
+            
+            padding:0;
+            margin:0;
+            background-color: #f3f3f3;
+            padding:10px;
+            color:black;
+            
+        }
+        .card-body img{
+                width:100%;
+                margin:0;
+                padding:0;
+                display: block;
+        }
+        .footer p{
+            text-align:center;
+            padding-top: 20px;
+            padding-bottom:20px;
+            margin:0;
+            background-color: #8aba56;
+            color:white;
+            font-size: small;
+            
+
+        }
+        .cards{
+            opacity:0.5;
+        }
+        .cards:hover{
+            opacity:1;
+        }
+
+        /* head3 */
+
+        .head3{
+            padding-bottom: 40px;
+            background-color:white; 
+            color:black;
+        }
+        .footer1{
+            text-align:center;
+            padding-top: 20px;
+            padding-bottom:20px;
+            margin:0;
+            color:white;
+            font-size: small;
+
+        }
+        #read{
+            width: 100px; 
+            color:#8aba56; 
+            border-color: #8aba56; 
+            background-color: black;
+
+        }
+        .cont{
+            width:100%;
+            padding:30px 0px;;
+            display: inline-block;
+
+            
+        }
+        .segment{
+           display:inline-block;
+           color:rgb(75, 74, 74);
+           text-align:left;
+           
+             
+       }
+        .leftbox{
+            display: inline-block;
+            padding-right:40px; 
+            padding-bottom: 15px;
+
+        }
+        .rightbox{
+            display: inline-block; 
+            text-align: left;
+            width:60%;
+            /* padding-top: 100px; */
+            margin-top: 0;
+        }
+        .leftbox > img{
+            width:90px; 
+            height:100px; 
+            border:6px rgb(204, 203, 203); 
+            border-style:double;
+        }
+        .rightbox > p:nth-child(1){
+            color: black; 
+            font-size: small; 
+            margin:0;
+        }
+        .rightbox > p:nth-child(2){
+            color: black;  
+            text-align: left; 
+            font-size: small; 
+            margin:0;
+        }
+        .rightbox > p:nth-child(3){
+            color: black; 
+            font-size: small;
+        }
+        .rightbox > button{
+            color:#8aba56; 
+            border-color: #8aba56; 
+            background-color: white;
+        }
+
+
+        /* head4 */
+
+        .head4{
+            /* padding-top:40px; */
+            padding-bottom: 40px;
+        }
+        .left4 > div{
+                display: inline-block;
+        }
+        .left5{
+                display: inline-block;
+                text-align:left;
+                
+        }
+        .top{
+                text-align: center;
+                justify-content:center ;
+                color:black;
+        }
+
+        .head4cont{
+            width:49%; 
+            padding-right: 20px;
+        }
+        .left5 > img{
+            width:230px; 
+            height:135px;
+        }
+        #label2{
+            background-color:cornflowerblue; 
+            width:50%; 
+            padding:0px 20px; 
+            vertical-align: top;
+        }
+        #label1{
+            background-color: chocolate; 
+            width:50%; 
+            padding:0px 20px; 
+            vertical-align: top;
+        }
+        #label1 > button{
+            color:white; 
+            border-color: white; 
+            background-color: chocolate;
+        }
+        #label2 > button{
+            color:white; 
+            border-color: white; 
+            background-color: cornflowerblue;
+        }
+
+        /* head5 */
+
+        .head5{
+            background-color:#232323; 
+            color:black; 
+            padding:20px;
+        }
+        .foot1{
+            display: inline-block;
+        }
+        .head4 .footers:nth-child(1){
+            width:40%; 
+            color:gray; 
+            padding-right: 80px;
+        }
+        .footers>div:nth-child(1){
+            width:40%; 
+            color:gray; 
+            padding-right: 80px;
+        }
+        .footers>div:nth-child(2){
+            width:27%; 
+            color:gray; 
+            padding-right: 80px;
+        }
+        .footers>div:nth-last-child(1){
+            width:30%; 
+            color:gray; 
+            padding-bottom: 50px;
+        }
+        .footbuttons #text{
+            background-color: black; 
+            padding:7px;
+        }
+        .footbuttons #submit{
+            background-color: yellowgreen; 
+            color:white; 
+            border-color: yellowgreen; 
+            padding:3px;
+        }
+        .footers{
+            
+            display: inline-block;
+            color:white; 
+            padding:8px;
+        }
+        .copy{
+            background-color:rgb(24, 23, 23); 
+            color:gray; 
+            padding:20px;
+        }
+        #ptag{
+            background-color: black;
+            padding:10px;
+            width:90%
+        }
+
+    </style>
+    <body style="margin: 0;">
+        <header class="head1">
+            <div class="inside">
+                <div class="content-left">
+                    List 1 | List 2 | List 3 | List 4 | List 5
+                </div>
+                <div class="content-right">
+                    <span><i class="fa-solid fa-phone"></i></span>+00 (123) 456 7890  |  <span><i class="fa-regular fa-envelope"></i></span>INFO@DOMAIN.COM
+                </div>
+            </div>
+        </header>
+        <header class="head2"  style="background-color:white; border-top: solid green;">
+            <div class="inside" >
+                <div class="content-left" style="width: 30%;">
+                    <img src="flomiclogo.jpg"> 
+                </div>
+                <div class="content-right"  style="width: 66%; vertical-align: top; padding: 15px 0px;">
+                    <div class="navbar" >
+                        <div class="nav"> 
+                            <h4>HOME</h4>
+                        </div>
+                        <div class="nav"> 
+                            <h4>PAGES</h4>
+                        </div>
+                        <div class="nav"> 
+                            <h4>DROPDOWN</h4>
+                        </div>
+                        <div class="nav"> 
+                            <h4>LINK TEXT</h4>
+                        </div>
+                        <div class="nav"> 
+                            <h4>LINK TEXT</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head2" style="background-color:black; color:white;  background-image:url(bgpic.jpg);">
+            <div class="inside">
+                <div class="contain">
+                    <div class="cards">
+                        <div class= "header" style="width:100%; ">
+                            <h4>CONSECTETUR PROVIDENT LOREM IPSUM</h4>
+                        </div>
+                        <div class="card-body" style="width:100%; padding:10px; line-height:2.5;">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.reprehenderit nam minus quisquam nobis, maiores vero quasi incidunt nihil. At.</p>
+                        </div>
+                        <div class="footer" style="width:100%;">
+                            <p><b> READ MORE &raquo;  </b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="cards">
+                        <div class= "header" style="width:100%;">
+                            <h4>CONSECTETUR PROVIDENT LOREM IPSUM</h4>
+                        </div>
+                        <div class="card-body" style="width:100%; padding:10px; line-height:2.5;">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. reprehenderit nam minus quisquam nobis, maiores vero quasi incidunt nihil. At.</p>
+                        </div>
+                        <div class="footer" style="width:100%;">
+                            <p><b> READ MORE &raquo;  </b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contain">
+                    <div class="cards">
+                        <div class= "header" style="width:100%;">
+                            <h4>CONSECTETUR PROVIDENT LOREM IPSUM</h4>
+                        </div>
+                        <div class="card-body" style="width:100%; padding:10px; line-height:2.5;">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.  reprehenderit nam minus quisquam nobis, maiores vero quasi incidunt nihil. At.</p>
+                        </div>
+                        <div class="footer" style="width:100%;">
+                            <p><b> READ MORE &raquo;  </b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head3">
+            <div class="inside">
+                <div class="cont" >
+                    <div class="segment" style="width:49%; padding-right: 50px;">
+                        <div class= "header1">
+                            <h4>CONSECTETUR PROVIDENT LOREM IPSUM</h4>
+                        </div>
+                        <div style="background-image: url('bgpic.jpg');">
+                            <div class="card-body" style="width:40%;">
+                                <img src="place.png" style="width:40%; height:300px;">
+                            </div>
+                            <div class="footer1" style=" background-color: black; opacity:0.5; color:white;">
+                                <h2>URNA SIT AMET</h2>
+                                <P><b>Aenean semper elementum tellus, ut placerat leo, quisque vehicula, urna sit amet...</b></P>
+                                <p><button id="read">Read more..</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="segment" style="width:49%; padding-top: 50px;">
+                        <h4 style="margin-bottom:0; padding:5px;">CONSECTETUR PROVIDENT LOREM IPSUM</h4> 
+                        <br>     
+                        <div class="leftbox">
+                            <img src="bgpic.jpg">
+                        </div>
+                        <div class="rightbox">
+                            <p>LOREM IPSUM IS SIMPLY TEXT</p>
+                            <p>By <span style="color: green;">A Name</span> &nbsp; Friday, 6 April 2045</p>
+                            <p>Lorem ipsum dolor sit commodi aliquam animi corrupti enim commodi aliquam  animi corrupti enim.</p>
+                            <button>Read more &raquo;</button>
+                        </div>
+                        
+                        
+                        <hr>
+                        <br>
+                        
+
+                        <div class="leftbox">
+                            <img src="bgpic.jpg">
+                        </div>
+                        <div class="rightbox"  style="padding-top: 10px;">
+                            <p>LOREM IPSUM IS SIMPLY TEXT</p>
+                            <p>By <span style="color: green;">A Name</span> &nbsp; Friday, 6 April 2045</p>
+                            <p>Lorem ipsum dolor sit commodi aliquam animi corrupti enim commodi aliquam  animi corrupti enim.</p>
+                            <button>Read more &raquo;</button>
+                        </div>
+
+                        <hr>
+                        <br>
+
+                        <div class="leftbox">
+                            <img src="bgpic.jpg">
+                        </div>
+                        <div class="rightbox"  style="padding-top: 10px;">
+                            <p>LOREM IPSUM IS SIMPLY TEXT</p>
+                            <p>By <span style="color: green;">A Name</span> &nbsp; Friday, 6 April 2045</p>
+                            <p>Lorem ipsum dolor sit commodi aliquam animi corrupti enim commodi aliquam  animi corrupti enim.</p>
+                            <button>Read more &raquo;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head4" style="background-color:rgb(202, 201, 201); color:white; padding:40px;">
+            <div class="inside">
+                <div>
+                    <div class="top" style="padding:20px;">
+                        <h4>DONEC FACILISIS VOLUTPAT LINGULA NIC EGESTAS</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit quas cum maiores voluptatem mollitia vero expedita!</p>
+                    </div>
+                    <br>
+                    <div class="left4" style="width:100%; display: inline-block;">
+                        <div class="head4cont">
+                            <div class="left5" style="width:45%;">
+                                <img src="bgpic.jpg">
+                            </div>
+                            <div class="left5" id="label1">
+                                <h4>QUISQUE VECHICULA URNA SIT AMET PULVINAR DAPIBUS</h4>
+                                <button>Read more &raquo;</button>
+                                <br><br>
+                            </div>
+                        </div>
+                        <div class="head4cont">
+                            <div class="left5" style="width:45%;">
+                                <img src="bgpic.jpg">
+                            </div>
+                            <div class="left5" id="label2">
+                                <h4>QUISQUE VECHICULA URNA SIT AMET PULVINAR DAPIBUS</h4>
+                                <button>Read more &raquo;</button>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="head5">
+            <div class="inside">
+                <div class="footers">
+                    <div class="foot1">
+                        <h4>LOREM IPSUM DOLOR </h4>
+                        <hr color="black">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum eligendi consequuntur! Consequuntur aperiam autem  nulla reiciendis impedit laborum doloribus!</p>
+                        <br>
+                        <p><span><i class="fa-solid fa-location-dot"></i></span> Street Name & Number, Town, Postcode/Zip</p>
+                        <p><span><i class="fa-solid fa-phone"></i></span> +00 (123) 456 7890</p>
+                        <p><span><i class="fa-regular fa-envelope"></i></span> info@domain.com</p>
+                    </div>
+                    <div class="foot1">
+                        <h4> QUICK LINKS</h4>
+                        <hr color="black">
+                        <div style="color:yellowgreen;">
+                            <p> Home Page</p>
+                            <p> Blog</p>
+                            <p> Gallery</p>
+                            <p> Portfolio</p>
+                            <p> Contact Us</p>
+                        </div>
+                        <div>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="foot1">
+                        <h4>KEEP IN TOUCH</h4>
+                        <hr color="black">
+                        <br>
+                        <form class="footbuttons">
+                            <input type="text" id="text" placeholder="Email"><br><br>
+                            <input type="submit" id="submit" placeholder="Submit">
+                        </form>
+                        <p id="ptag">
+                        <i class="fa-brands fa-facebook"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-pinterest"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-twitter"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-basketball"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-linkedin-in"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-brands fa-google-plus-g"></i> &nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-wifi"></i>
+                        </p>
+
+                        <div>
+                            <br><br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="copy">
+            <div class="inside">
+                <div>
+                    <p>Copyright @ 2015 - All Rights Reserved - Flomic</p>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
